@@ -2,11 +2,10 @@
 
 نسخة أولية من تطبيق دردشة باسم AtaWhatsApp.
 
-## التشغيل
-1. ثبّت Flutter.
-2. افتح هذا المجلد في Android Studio أو VS Code.
-3. نفّذ `flutter pub get`.
-4. نفّذ `flutter run`.
+## البناء
 
-## المرحلة التالية
-إضافة Firebase Authentication للتحقق الحقيقي برقم الهاتف والبريد، ثم Firestore للرسائل وFCM للإشعارات.
+يتم بناء نسخة Android عبر GitHub Actions في `.github/workflows/dart.yml`.
+
+الـAPK الناتج: `android/app/build/outputs/apk/release/app-release.apk`
+
+ملاحظة: شاشة تسجيل الدخول الحالية تجريبية؛ التحقق الحقيقي عبر SMS/Email وFirebase غير مربوط بعد.

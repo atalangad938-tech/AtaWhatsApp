@@ -1,18 +1,11 @@
 # AtaWhatsApp — Android build
 
-المتطلبات:
-- Flutter SDK حديث
-- Android Studio
-- Android SDK
-- Java 17
+المشروع مرتب كهيكل Flutter/Android كامل.
 
-## البناء
-من داخل مجلد المشروع:
-flutter pub get
-flutter build apk --release
+البناء عبر GitHub Actions:
+1. افتح Actions.
+2. اختر Flutter APK.
+3. شغّل العملية أو ادفع تغييرًا إلى main.
+4. بعد نجاح Build، حمّل Artifact باسم AtaWhatsApp-APK.
 
-الـAPK الناتج عادةً سيكون:
-build/app/outputs/flutter-apk/app-release.apk
-
-## ملاحظة
-هذه النسخة هي هيكل Android/Flutter قابل للبناء. تسجيل الدخول الحقيقي عبر SMS/Email وFirebase لم يُربط بعد؛ شاشة الدخول الحالية تجريبية.
+الـAPK: android/app/build/outputs/apk/release/app-release.apk
